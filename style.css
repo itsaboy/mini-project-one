@@ -1,0 +1,114 @@
+* {
+    font: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-low:
+      0.2px 0.2px 0.3px hsl(var(--shadow-color) / 0.62),
+      0.4px 0.4px 0.5px -1.9px hsl(var(--shadow-color) / 0.48),
+      1.1px 1.1px 1.5px -3.7px hsl(var(--shadow-color) / 0.35);
+    --shadow-elevation-medium:
+      0.2px 0.2px 0.3px hsl(var(--shadow-color) / 0.52),
+      0.5px 0.5px 0.7px -0.9px hsl(var(--shadow-color) / 0.45),
+      1.1px 1.1px 1.5px -1.9px hsl(var(--shadow-color) / 0.38),
+      2.6px 2.6px 3.4px -2.8px hsl(var(--shadow-color) / 0.31),
+      5.4px 5.4px 7.2px -3.7px hsl(var(--shadow-color) / 0.24);
+    --shadow-elevation-high:
+      0.2px 0.2px 0.3px hsl(var(--shadow-color) / 0.54),
+      0.9px 0.9px 1.2px -0.5px hsl(var(--shadow-color) / 0.5),
+      1.7px 1.7px 2.3px -0.9px hsl(var(--shadow-color) / 0.46),
+      3.1px 3.1px 4.1px -1.4px hsl(var(--shadow-color) / 0.42),
+      5.3px 5.3px 7px -1.9px hsl(var(--shadow-color) / 0.38),
+      8.7px 8.7px 11.5px -2.3px hsl(var(--shadow-color) / 0.34),
+      13.7px 13.7px 18.2px -2.8px hsl(var(--shadow-color) / 0.3),
+      20.5px 20.5px 27.2px -3.3px hsl(var(--shadow-color) / 0.26),
+      29.6px 29.6px 39.2px -3.7px hsl(var(--shadow-color) / 0.22);
+  }
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+header {
+    display: block;
+    background-color: lightblue;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 2rem;
+    border-bottom: 2px black solid;
+    box-shadow: var(--shadow-elevation-low);
+}
+
+#title {
+    font-size: 5rem;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+.main-section {
+    background-color: lightgreen;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#section1 {
+    font-size: 3rem;
+}
+
+img {
+    margin-top: 12rem;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+#section2 {
+    font-size: 2rem;
+}
+
+.form-item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+input {
+    border: 1px black solid;
+}
+
+#button {
+    box-shadow: var(--shadow-elevation-medium);
+}
+
+footer {
+    background-color: lightcoral;
+    font-size: 3rem;
+    padding: 3rem;
+    margin-top: 1rem;
+}
